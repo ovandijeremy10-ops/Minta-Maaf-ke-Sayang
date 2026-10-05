@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Buat Ade 💗</title>
+    <meta name="theme-color" content="#ffe3ec" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hearts" id="hearts" aria-hidden="true"></div>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+    <main class="card" id="card">
+      <header class="top">
+        <button
+          class="back"
+          id="backBtn"
+          type="button"
+          aria-label="Kembali ke slide sebelumnya"
+          hidden
+        >
+          ‹
+        </button>
+        <span class="progress" id="progress" aria-live="polite">1/8</span>
+      </header>
+
+      <div class="stage" id="stage">
+        <section class="slide active" data-slide="1" aria-label="Slide 1">
+          <div class="big-heart" aria-hidden="true">💗</div>
+          <h1 class="hand">Haii, sayanggg 💗</h1>
+          <p>Ada sesuatu yang mau abang sampaikan buat ade...</p>
+          <button class="btn next" type="button">
+            Klik di sini, sayang 💌
+          </button>
+        </section>
+
+        <section class="slide" data-slide="2" aria-label="Slide 2">
+          <h2 class="hand">Maafin akuu yaa sayangg 🥺</h2>
+          <p>Abang mau ngomong sesuatu sama ade...</p>
+          <button class="btn next" type="button">Lanjutkan yaa 💗</button>
+        </section>
+
+        <section class="slide" data-slide="3" aria-label="Slide 3">
+          <h2 class="hand">Akuu tauu akuu salaah...</h2>
+          <p>Abang sadar kalau abang udah bikin ade kecewa.</p>
+          <button class="btn next" type="button">Abang mau jujur... 🥺</button>
+        </section>
+
+        <section class="slide" data-slide="4" aria-label="Slide 4">
+          <h2 class="hand">Tapi... apa memang nggak ada ruang buat aku? 🥹</h2>
+          <p>
+            Abang berharap masih ada kesempatan buat memperbaiki semuanya, kalau
+            ade berkenan.
+          </p>
+          <button class="btn next" type="button">Baca lagi yaa 💌</button>
+        </section>
+
+        <section class="slide" data-slide="5" aria-label="Slide 5">
+          <h2 class="hand">Maapin abang yaaa sayaangg ❤️</h2>
+          <p>Abang bener-bener minta maaf sama ade.</p>
+          <button class="btn next" type="button">Abang mau cerita... 🥹</button>
+        </section>
+
+        <section class="slide" data-slide="6" aria-label="Slide 6">
+          <h2 class="hand">Yang abang sesali</h2>
+          <ul class="regrets">
+            <li>Selalu buat ade kecewa 😔</li>
+            <li>Selalu buat ade ovt 🥺</li>
+            <li>Selalu buat mood adee ga bagus 💔</li>
+          </ul>
+          <button class="btn next" type="button">
+            Abang nyesel, sayang... 💗
+          </button>
+        </section>
+
+        <section class="slide" data-slide="7" aria-label="Slide 7">
+          <h2 class="hand">Maaping abang yaaa sayangg 🥺❤️</h2>
+          <p>
+            Abang janjii bakal berusaha memperbaiki diri dan nggak mengulangi
+            kesalahan yang sama. Abang nggak minta ade percaya begitu aja, abang
+            mau buktiin pelan-pelan lewat tindakan.
+          </p>
+          <button class="btn next" type="button">
+            Satu pesan terakhir yaa... 💌
+          </button>
+        </section>
+
+        <section class="slide" data-slide="8" aria-label="Slide 8">
+          <div id="finalMain">
+            <figure class="polaroid">
+              <div class="photo">
+                <video
+                  id="coupleVideo"
+                  playsinline
+                  muted
+                  loop
+                  preload="metadata"
+                  controls
+                  controlslist="nodownload noremoteplayback"
+                  aria-label="Video abang dan ade berdua"
+                >
+                  <source
+                    id="coupleSource"
+                    src="assets/video/fotbar.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="placeholder" id="photoPlaceholder">
+                  <span>💗</span>Video kita berdua di sini 💗
+                </div>
+              </div>
+              <figcaption class="hand">Maapinn yaa sayanggg 🥺❤️</figcaption>
+            </figure>
+            <p class="small">
+              Abang tahu kata maaf aja nggak cukup. Abang mau belajar dari
+              kesalahan abang dan membuktikannya lewat tindakan. Abang berharap
+              ade mau memaafkan abang, tapi abang juga menghargai perasaan ade.
+            </p>
+            <div class="choices">
+              <button class="btn" type="button" id="forgiveBtn">
+                Iyaa, aku maafin ❤️
+              </button>
+              <button class="btn ghost" type="button" id="needTimeBtn">
+                Aku butuh waktu dulu 🤍
+              </button>
+            </div>
+          </div>
+
+          <div id="thanksPanel" class="panel" hidden>
+            <div class="big-heart" aria-hidden="true">💞</div>
+            <h2 class="hand">Makasih ya, sayang 🥹</h2>
+            <p>
+              Makasih udah mau kasih abang kesempatan. Abang bakal jaga
+              kepercayaan ade pelan-pelan.
+            </p>
+            <p class="small" id="waNote"></p>
+            <button class="btn ghost" type="button" id="waAgainBtn" hidden>
+              Buka WhatsApp lagi 💬
+            </button>
+          </div>
+
+          <div id="waitPanel" class="panel" hidden>
+            <div class="big-heart" aria-hidden="true">🤍</div>
+            <p class="hand big">
+              Gapapaa sayang, abang ngerti. Ambil waktu yang ade butuhin yaa.
+              Abang tetap menghargai perasaan ade 🤍
+            </p>
+            <button class="btn ghost" type="button" id="backToMsgBtn">
+              Kembali ke pesan abang
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
